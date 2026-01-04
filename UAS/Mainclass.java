@@ -28,7 +28,7 @@ public class Mainclass {
             input.nextLine();
 
             if (pilih==1){
-                User_Mahasiswa mhs= new User_Mahasiswa();
+                User_Mahasiswa mhs= new User_Mahasiswa();//CONSTRUCTOR DEFAULT + SETTER
                 System.out.print("NPM: ");
                 Mhs.setNpm(input.nextLine());
                 System.out.print("Nama: ");
@@ -41,7 +41,7 @@ public class Mainclass {
                 users.add(Mhs);
             }
         else if (pilih==2){
-                System.out.print("NID: ");
+                System.out.print("NID: ");//CONSTRUCTOR PARAMETER
                 String nidDsn = input.nextLine();
                 System.out.print("Nama Dosen: ");
                 String namaDsn= input.nextLine();
@@ -97,3 +97,4 @@ public class Mainclass {
 
 
     
+
