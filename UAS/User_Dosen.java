@@ -8,40 +8,41 @@
  * @author nifsi
  */
 public class User_Dosen extends User {
-    private String nid;
+    private String Nid;
     private String ProgramKeahlian;
 
     // static variable
-    public static int totalMahasiswa = 0;
+    public static int totalDosen = 0;
 
     public User_Dosen() {}
 
-    public User_Dosen (String nid, String nama, String ProgramKeahlian) {
-        super(nama);
+    public User_Dosen (String Nid, String Nama, String ProgramKeahlian) {
+        super(Nama);
         this.ProgramKeahlian = ProgramKeahlian;
-        this.nid = nid;
-        totalMahasiswa++;
+        this.Nid = Nid;
+        totalDosen++;
     }
 
     public String getProgramKeahlian() {
         return ProgramKeahlian;
     }
-    public String getnid(){
-        return nid;
+    public String getNid(){
+        return Nid;
     }
 
     public void setProgramKeahlian(String ProgramKeahlian) {
         this.ProgramKeahlian = ProgramKeahlian;
     }
-    public void setnid(String nid){
-        this.nid = nid;
+    public void setNid(String Nid){
+        this.nid = Nid;
     }
 
     @Override
     public void tampilInfo() {
-        System.out.println("NID: " + nid);
+        System.out.println("NID: " + Nid);
         System.out.println("Nama: " + getNama());
         System.out.println("Program Keahlian: " + ProgramKeahlian);
     }
 }    
+
 
