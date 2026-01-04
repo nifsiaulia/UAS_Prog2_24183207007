@@ -8,39 +8,46 @@
  * @author nifsi
  */
 public class User_Mahasiswa extends User {
-    private String jurusan;
-    private String npm;
+    private String Jurusan;
+    private String Npm;
+    private int Semester
 
     // static variable
     public static int totalMahasiswa = 0;
 
     public User_Mahasiswa() {}
 
-    public User_Mahasiswa(String npm, String nama, String jurusan) {
-        super(nama);
-        this.jurusan = jurusan;
-        this.npm = npm;
+    public User_Mahasiswa(String Npm, String Nama, String Jurusan) {
+        super(Nama);
+        this.Jurusan = Jurusan;
+        this.Npm = Npm;
         totalMahasiswa++;
     }
 
     public String getJurusan() {
-        return jurusan;
+        return Jurusan;
     }
-    public String getnpm(){
-        return npm;
+    public String getNpm(){
+        return Npm;
     }
-
-    public void setJurusan(String jurusan) {
-        this.jurusan = jurusan;
+    public int getSemester(){
+        return Semester;
     }
-    public void setnpm(String npm){
-        this.npm = npm;
+    public void setJurusan(String Jurusan) {
+        this.Jurusan = Jurusan;
     }
-
+    public void setNpm(String Npm){
+        this.Npm = Npm;
+    }
+    public void setSemester(int Semester){
+        this.Semester=Semester;
+    }
     @Override
     public void tampilInfo() {
-        System.out.println("NPM: " + npm);
-        System.out.println("Nama: " + getNama());
-        System.out.println("Jurusan: " + jurusan);
+        System.out.println("NPM: " + Npm);
+        System.out.println("Nama: " + Nama);
+        System.out.println("Jurusan: " + Jurusan);
+        System.out.println("Semester: "+ Semester);
     }
 }
+
