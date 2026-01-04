@@ -28,14 +28,16 @@ public class Mainclass {
             input.nextLine();
 
             if (pilih==1){
+                User_Mahasiswa mhs= new User_Mahasiswa();
                 System.out.print("NPM: ");
-                String npmMhs = input.nextLine();
-                System.out.print("Nama Mahasiswa: ");
-                String namaMhs = input.nextLine();
+                Mhs.setNpm(input.nextLine());
+                System.out.print("Nama: ");
+                Mhs.setNama(input.nextLine());
                 System.out.print("Peogram Jurusan: ");
-                String jur = input.nextLine();
+                Mhs.setJurusan(input.nextLine());
+                System.out.print("Semester: ");
+                Mhs.setSemester(input.nextInt());
                 
-                User Mhs=new User_Mahasiswa(npmMhs,namaMhs,jur);
                 users.add(Mhs);
             }
         else if (pilih==2){
@@ -91,6 +93,7 @@ public class Mainclass {
         } while (pilih != 0);
     }
 }
+
 
 
     
