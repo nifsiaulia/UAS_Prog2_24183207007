@@ -28,7 +28,7 @@ public class Mainclass {
             input.nextLine();
 
             if (pilih==1){
-                User_Mahasiswa mhs= new User_Mahasiswa();//CONSTRUCTOR DEFAULT + SETTER
+                User_Mahasiswa Mhs= new User_Mahasiswa();//CONSTRUCTOR DEFAULT + SETTER
                 System.out.print("NPM: ");
                 Mhs.setNpm(input.nextLine());
                 System.out.print("Nama: ");
@@ -61,7 +61,7 @@ public class Mainclass {
                 int sks = input.nextInt();
                 input.nextLine();
 
-                Matakuliah mk = new Matakuliah(kode, namaMk, sks);
+                Matakuliah mk = new Matakuliah(Kode, NamaMk, Sks);
                 mk.tampilMk();
             }
             else if (pilih==4){
@@ -97,4 +97,5 @@ public class Mainclass {
 
 
     
+
 
