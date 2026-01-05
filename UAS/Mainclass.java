@@ -39,29 +39,7 @@ public class Mainclass {
                 System.out.print("Semester: ");
                 Mhs.setSemester(input.nextInt());
                 input.nextLine();
-
-                System.out.print("Kode MK: ");
-                String kode = input.nextLine();
-                System.out.print("Nama MK: ");
-                String nama = input.nextLine();
-                System.out.print("SKS: ");
-                int sks = input.nextInt();
-                input.nextLine();
-                Matakuliah mk = new Matakuliah(kode, nama, sks);
-                mk.tampilMk();
-                Mhs.setMatakuliah(mk);
-
-                System.out.print("Nilai Tugas: ");
-                double t = input.nextDouble();
-                System.out.print("Nilai UTS: ");
-                double uts = input.nextDouble();
-                System.out.print("Nilai UAS: ");
-                double uas = input.nextDouble();
-
-                Nilai hasil = new Nilai(t, uts, uas);
-                Mhs.setNilai(hasil);
-                
-                
+        
                 users.add(Mhs);
                 System.out.println("DATA BERHASIL DI TAMBAHKAH!");
                 System.out.println("_________________");
@@ -138,5 +116,6 @@ public class Mainclass {
         } while (pilih != 0);
     }
 }
+
 
     
