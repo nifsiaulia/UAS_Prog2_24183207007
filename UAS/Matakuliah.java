@@ -8,47 +8,48 @@
  * @author nifsi
  */
 public class Matakuliah {
-    private String kodeMk; 
-    private String namaMk; 
-    private int sks; 
+    private String KodeMk; 
+    private String NamaMk; 
+    private int Sks; 
 
     // default constructor
     public Matakuliah() {}
 
     // constructor parameter
-    public Matakuliah(String kodeMk, String namaMk, int sks) {
-        this.kodeMk = kodeMk;
-        this.namaMk = namaMk;
-        this.sks = sks;
+    public Matakuliah(String KodeMk, String NamaMk, int Sks) {
+        this.KodeMk = KodeMk;
+        this.NamaMk = NamaMk;
+        this.Sks = Sks;
     }
 
     // getter & setter
     public String getKodeMk() {
-        return kodeMk;
+        return KodeMk;
     }
 
-    public void setKodeMk(String kodeMk) {
-        this.kodeMk = kodeMk;
+    public void setKodeMk(String KodeMk) {
+        this.KodeMk = KodeMk;
     }
 
     public String getNamaMk() {
-        return namaMk;
+        return NamaMk;
     }
 
-    public void setNamaMk(String namaMk) {
-        this.namaMk = namaMk;
+    public void setNamaMk(String NamaMk) {
+        this.NamaMk = NamaMk;
     }
 
     public int getSks() {
-        return sks;
+        return Sks;
     }
 
-    public void setSks(int sks) {
-        this.sks = sks;
+    public void setSks(int Sks) {
+        this.Sks = Sks;
     }
 
     // method void
     public void tampilMk(){
-        System.out.println(kodeMk + " - " + namaMk + " (" + sks + " SKS)");
+        System.out.println(KodeMk + " - " + NamaMk + " (" + Sks + " SKS)");
     }
+
 }
