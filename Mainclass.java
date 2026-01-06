@@ -13,6 +13,7 @@ public class Mainclass {
 
         Scanner input = new Scanner(System.in);
         ArrayList<User> users = new ArrayList<>();
+                
         //ArrayList<Matakuliah> listmk = new ArrayList<>();
         //ArrayList<Nilai> nilaimhs = new ArrayList<>();
 
@@ -41,6 +42,7 @@ public class Mainclass {
                 System.out.print("Semester: ");
                 Mhs.setSemester(input.nextInt());
                 input.nextLine();
+                System.out.println("DATA BERHASIL DI TAMBAHKAH!");
                 
                 //System.out.println("_________________");
                 //System.out.print("Kode MK: ");
@@ -50,6 +52,7 @@ public class Mainclass {
                 //System.out.print("SKS: ");
                 //int sks = input.nextInt();
                 //input.nextLine();
+                //System.out.println("MATAKULIAH BERHASIL DI TAMBAHKAH!");
                 //Matakuliah mk = new Matakuliah(kode, nama, sks);
                 //Mhs.setMatakuliah(mk);
                 
@@ -61,9 +64,10 @@ public class Mainclass {
                 //System.out.print("Nilai UAS: ");
                 //double uas = input.nextDouble();
                 //Nilai hasil = new Nilai(t, uts, uas);
+                //System.out.println("NILAI BERHASIL DI TAMBAHKAH!");
                 //Mhs.setNilai(hasil);
+                    
                 users.add(Mhs);
-                System.out.println("DATA BERHASIL DI TAMBAHKAH!");
                 System.out.println("_________________");
             }
         else if (pilih==2){
@@ -94,7 +98,7 @@ public class Mainclass {
                 Matakuliah mk = new Matakuliah(kode, nama, sks);
                 mk.tampilMk();
                 //listmk.add(mk);
-                System.out.println("DATA BERHASIL DI TAMBAHKAH!");
+                System.out.println("MATAKULIAH BERHASIL DI TAMBAHKAH!");
                 System.out.println("_________________");
 
             }
@@ -143,5 +147,6 @@ public class Mainclass {
         } while (pilih != 0);
     }
 }
+
 
     
